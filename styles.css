@@ -1,0 +1,51 @@
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-flex;
+}
+
+ul li a {
+    text-decoration: none;
+    color: darkgray;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+ul li a:hover {
+    color: gray;
+}
+
+.nav .active a {
+    color: red;
+    border-bottom: 1px solid #eb4f47;
+}
+
+.nav .active a:hover {
+    border-color: transparent;
+    background: #eb4f47;
+    color: white;
+}
+
+#spec {
+	display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: #000000 solid 1px;
+    border-right: none;
+    border-left: none;
+}
+
+table td {
+    width: 50%;
+    text-align: left;
+}

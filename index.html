@@ -4,43 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>This is a test</title>
-    <style type="text/css">
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-
-    ul li {
-        display: inline-flex;
-    }
-
-    ul li a {
-        text-decoration: none;
-        color: darkgray;
-        padding: 10px;
-        transition: all 0.3s ease-in-out;
-        border-bottom: 1px solid transparent;
-    }
-
-    ul li a:hover {
-        color: gray;
-    }
-
-    .nav .active a {
-        color: red;
-        border-bottom: 1px solid #eb4f47;
-    }
-
-    .nav .active a:hover {
-        border-color: transparent;
-        background: #eb4f47;
-        color: white;
-    }
-
-    #spec {
-    	display: none;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -57,17 +21,16 @@
             </div>
             <div class="tabcontent" id="spec">
                 <div class="" id="app">
-                    <div class="columns medium-3" v-for="result in results">
-                        <div class="card">
-                            <div class="card-divider">
+                    <table class="columns medium-3" v-for="result in results">
+                        <tr class="card">
+                            <td class="card-divider">
                                 <strong>{{ result.attribute }}</strong>
-                            </div>
-                            <div class="card-section">
+                            </td>
+                            <td class="card-section">
                                 <span>{{ result.value }}</span>
-                            </div>
-                        </div>
-                        <hr>
-                    </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
