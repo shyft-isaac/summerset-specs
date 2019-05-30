@@ -21,13 +21,13 @@
             </div>
             <div class="tabcontent" id="spec">
                 <div class="" id="app">
-                    <table class="columns medium-3" v-for="result in results">
-                        <tr class="card">
+                    <table class="columns medium-3">
+                        <tr class="card" v-for="result in results">
                             <td class="card-divider">
-                                <strong>{{ result.attribute }}</strong>
+                                <strong>{{ result.title }}</strong>
                             </td>
                             <td class="card-section">
-                                <span>{{ result.value }}</span>
+                                <span>{{ result.abstract }}</span>
                             </td>
                         </tr>
                     </table>
@@ -58,6 +58,7 @@
         evt.currentTarget.className += " active";
     }
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue"></script>
     <script src="app.js"></script>
 </body>

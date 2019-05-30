@@ -8,5 +8,10 @@ const vm = new Vue({
       {attribute: "Type", value: "Natural Gas"},
       {attribute: "Warranty", value: "3 Year"}
     ]
+  },
+
+mounted() {
+    axios.get("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=Pezqb7yOBzIvUCjiTBzcTfOS1BfAR28n")
+    .then(response => {this.results = response.data.results})
   }
 });
