@@ -49,3 +49,24 @@ table td {
     width: 50%;
     text-align: left;
 }
+
+.download-btn {
+    text-align: center;
+    padding: 10px;
+    background-color: #c4c4c4;
+    margin: 20px;
+}
+
+#spec div.download-btn span {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cutouts-large {
+    text-align: center;
+}
+
+.download-btn img {
+    width: 20px;
+    margin-right: 10px;
+}

@@ -20,16 +20,121 @@
                 <p>Your kitchen, the way you want it… Summerset offers plenty of miscellaneous conveniences, upgrades, and appliances to customize your outdoor space to your liking. From Stainless Steel Ice Chests to Stainless Steal Paper Towel Drawers, Summerset has matching pieces to take your outdoor kitchen to the next level, while maintaining the same elegant quality and design. All products feature #304 stainless steel construction for durability and performance, matching handles and hardware, and various options.</p>
             </div>
             <div class="tabcontent" id="spec">
+
+                <div class="cutouts-large" v-for="result in results">
+                    <span>Cutouts<span>
+                    <h2> {{ result.cutouts }} </h2>
+                </div>
+                <a href="#"><div class="download-btn"><img src="pdf-icon.gif"> <span>Download SPEC Sheet<span></div></a>
+
                 <div class="" id="app">
-                    <table class="columns medium-3">
-                        <tr class="card" v-for="result in results">
+
+                    <table v-for="result in results" class="columns medium-3">
+                        <tr class="card">
                             <td class="card-divider">
-                                <strong>{{ result.title }}</strong>
+                                <strong>Overall Dimentions: </strong>
                             </td>
-                            <td class="card-section">
-                                <span>{{ result.abstract }}</span>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.overall-dimensions }}</strong>
                             </td>
                         </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Box Dimensions: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.box-dimensions }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Fuel Type: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.fuel-type }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Finish: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.finish }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Hood Feature: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.hood-feature }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Grate Thickness: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.grate-thickness }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Burner Type: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.burner-type }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Ignition Features: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.ignition-features }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Briquette System: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.briquette-system }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Main Burner BTUs: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.main-burner-btus }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Back Burner BTUs: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.back-burner-btus }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Temperature Gauge: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.temperature-gauge }}</strong>
+                            </td>
+                        </tr>
+                        <tr class="card">
+                            <td class="card-divider">
+                                <strong>Total Cooking Surface: </strong>
+                            </td>
+                            <td class="card-divider">
+                                <strong>{{ result.attributes.total-cooking-surface }}</strong>
+                            </td>
+                        </tr>
+                        
                     </table>
                 </div>
             </div>
